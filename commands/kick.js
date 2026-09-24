@@ -27,7 +27,7 @@ async function kickCommand(sock, chatId, senderId, mentionedJids, message) {
     
     if (usersToKick.length === 0) {
         await sock.sendMessage(chatId, { 
-            text: 'Please mention the user or reply to their message to kick!'
+            text: 'কিরে মাদারচোদ তোর নানির লিংক চোদাস আমার গ্রুপে!'
         }, { quoted: message });
         return;
     }
@@ -116,7 +116,7 @@ async function kickCommand(sock, chatId, senderId, mentionedJids, message) {
         }));
         
         await sock.sendMessage(chatId, { 
-            text: `${usernames.join(', ')} has been kicked successfully!`,
+            text: `${usernames.join(', ')} সাইয়ার পোলারে কিক দিয়া দিছি!`,
             mentions: usersToKick
         });
     } catch (error) {
